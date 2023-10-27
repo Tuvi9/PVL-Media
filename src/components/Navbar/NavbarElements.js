@@ -4,11 +4,11 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   background: black;
-  height: 150px;
+  height: 75px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   font-weight: bold;
-  padding: 0.2rem calc((100vw - 1000px) / 2);
+  padding: 0.2rem calc((100vw - 1400px) / 2);
   z-index: 12;
 `;
  
@@ -19,7 +19,7 @@ export const NavLink = styled(Link)`
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
-  font-size: 200%;
+  font-size: 150%;
   cursor: pointer;
   &.active {
     color: white;
@@ -47,5 +47,21 @@ export const NavMenu = styled.div`
     margin-right: -24px;
     @media screen and (max-width: 768px) {
     display: none;
+  }
+`;
+
+export const NavbarContainer = styled.div`
+  .navbar-container {
+    ${Nav} {
+      /* Navbar styles here */
+    }
+
+    ${NavLink} {
+      /* NavLink styles here */
+    }
+
+    ${Bars} {
+      /* Bars styles here */
+    }
   }
 `;
