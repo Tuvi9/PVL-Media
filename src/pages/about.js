@@ -7,16 +7,23 @@ function About() {
   <>
     <div>
       <div className='container'>
-        <div className='image'>
-          <img src={PictureOfMe} alt="me" ></img>
+        <div>
+          <img id="about_images" src={PictureOfMe} alt="me"/>
         </div>
-        <div className="border">
-        <div className='quote'>
-            <p>"She said I'm in the wrong hole I said I'm lost. Uh, uh!"</p>
+        <div className="border quote">
+            <p>"She seem to make me always feel like a boss, uh-uh"</p>
+            <p>She said I'm in the wrong hole, I said I'm lost, uh-uh</p>
+            <p>She said I'm goin' too fast, I'm exhausted</p>
+            <p>Now drop to your knees for the offerin'</p>
+            <p>This the theme song of something wrong</p>
+            <p>Might need an intervention for this new dimension</p>
+            <p>That's too new to mention, or fit in a sentence</p>
           </div>
         </div>
+        <div className="bottom_bar">
+          <p id="bottom_bar_text">&#169;PVL-Media</p>
+        </div>
       </div>
-    </div>
   </>
   );
 }

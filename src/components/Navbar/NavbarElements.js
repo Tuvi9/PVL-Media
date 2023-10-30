@@ -13,6 +13,7 @@ export const Nav = styled.nav`
 `;
  
 export const NavLink = styled(Link)`
+  font-family: 'Courier New';
   color: #808080;
   display: flex;
   align-items: center;

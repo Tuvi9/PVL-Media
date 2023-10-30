@@ -9,7 +9,7 @@ const Navbar = () => {
             <Bars />
             <NavMenu>
                 <NavLink to='/about' activeStyle >About Us</NavLink>
-                <NavLink to='/gallery' activeStyle style={{marginRight: '40px'}}>Gallery</NavLink>
+                <NavLink to='/clients' activeStyle style={{marginRight: '40px'}}>Our Clients</NavLink>
             </NavMenu>
         </Nav>
     </>
