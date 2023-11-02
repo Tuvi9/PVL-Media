@@ -1,15 +1,22 @@
 import React from "react";
+// Where the images are imported
 import PictureOfMe from '../components/images/PictureOfMe.JPG';
+// Styling file for this page
 import '../components/UI/about.css';
 
 function About() {
   return (
   <>
-    <div>
+  <head>
+    <meta viewport="width=device-width, initial-scale=1.0" name="viewport"></meta>
+  </head>
+    <body>
+      {/* Picture of me for (About us) page */}
       <div className='container'>
         <div>
           <img id="about_images" src={PictureOfMe} alt="me"/>
         </div>
+        {/* Two classes (border) & (quote)*/}
         <div className="border quote">
             <p>"She seem to make me always feel like a boss, uh-uh"</p>
             <p>She said I'm in the wrong hole, I said I'm lost, uh-uh</p>
@@ -20,10 +27,11 @@ function About() {
             <p>That's too new to mention, or fit in a sentence</p>
           </div>
         </div>
+        {/* Footer of my page */}
         <div className="bottom_bar">
           <p id="bottom_bar_text">&#169;PVL-Media</p>
         </div>
-      </div>
+      </body>
   </>
   );
 }

@@ -7,25 +7,33 @@ import BURGERKING from '../components/images/BURGERKING.JPG';
 function Clients() {
   return (
     <>
-      <div className="clients_container">
-        <div className="clients_text">
-          <p>Our satisfied clients!</p>
-        </div>
-        <div className="circle_component">
-            <div className="circle">
-              <img id="client_images" src={Kriit} alt="Kalle Riit"></img>
-            </div>
-            <div className="circle">
-              <img id="client_images" src={Sasskar} alt="Aleksander Potašenkov"></img>
-            </div>
-            <div className="circle">
-              <img id="client_images" src={BURGERKING} alt="Asko Hulkko"></img>
-            </div>
-        </div>
-    </div>
-      <div className="bottom_bar">
-        <p id="bottom_bar_text">&#169;PVL-Media</p>
+    <head>
+      <meta viewport="width=device-width, initial-scale=1.0" name="viewport"></meta>
+    </head>
+      <body>
+      {/* Container for the title of the page which is a container above grid-colums*/}
+        <div className="clients_container">
+          <div className="clients_text">
+            <p>Our satisfied clients!</p>
+          </div>
+          {/* circle_component places puts clients into a grid*/}
+          <div className="circle_component">
+              <div className="circle">
+                <img id="client_images" src={Kriit} alt="Kalle Riit"></img>
+              </div>
+              <div className="circle">
+                <img id="client_images" src={Sasskar} alt="Aleksander Potašenkov"></img>
+              </div>
+              <div className="circle">
+                <img id="client_images" src={BURGERKING} alt="Asko Hulkko"></img>
+              </div>
+          </div>
       </div>
+      {/* Footer of my page */}
+        <div className="bottom_bar">
+          <p id="bottom_bar_text">&#169;PVL-Media</p>
+        </div>
+      </body>
     </>
   );
 }
