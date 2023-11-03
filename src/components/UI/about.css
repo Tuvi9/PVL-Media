@@ -1,51 +1,53 @@
 /* Main container that every other container falls under (whole page) */
 .container {
-  display: grid;
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  column-gap: 5px;
+  position: fixed;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10rem;
+  justify-content: center;
   align-items: center; 
  }
  
- 
- .border {
-   margin-left: 10%;
-   margin-right: 5%;
-   margin-bottom: 15%;
-   background-color: black;
-    border: 15px solid black;
-  }
-  
-  .quote {
+ /* Kanye West song lyrics in About US*/
+ .border_and_text {
+    background-color: black;
+    border: 1.5rem solid black;
+    white-space: nowrap;
     color: white;
-    font-size: 25px;
-    margin-top: 25px;
+    font-size: 1.2rem;
     text-decoration: underline;
     font-family: 'Courier New', Courier, monospace;
+    line-height: 2.5rem;
+    margin-bottom: 25vh;
   }
   
+  /* Footer for all my pages in PVL-Media(This whole website)*/
   .bottom_bar {
     
     bottom: 0;
+    height: 8.4vh;
     width: 100%;
-    height: 75px;
     position: fixed;
     background-color: black;
   }
   
-  #bottom_bar_text {
+  /* Text in the footer */
+    #bottom_bar_text {
     color: white;
-    font-size: 20px;
-    margin-top: 25px;
-    margin-left: 40px;
+    font-size: 1.5rem;
+    margin-left: 1vw;
+    margin-top: 2.5vh;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
   }
 
+  /* Image of me in About Us */
   #about_images {
-    width: 450px;
-    height: 500px;
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-bottom: 40%;
+    width: 40vw;
+    height: 75vh;
     border-radius: 10px;
+    margin-bottom: 7.5rem;
+    box-shadow: 10px 10px 10px 10px #888888;
   }

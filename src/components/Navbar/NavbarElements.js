@@ -6,7 +6,8 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   background: black;
-  height: 75px;
+  /* Changed my height from px to vh (viewport height */
+  height: 7.5vh;
   display: flex;
   justify-content: space-between;
   font-weight: bold;
@@ -47,7 +48,7 @@ export const NavMenu = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: -24px;
+    /* margin-right: -24px; */
     @media screen and (max-width: 768px) {
     display: none;
   }
