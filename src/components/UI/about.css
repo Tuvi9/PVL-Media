@@ -27,7 +27,9 @@
     padding: 2.5rem;
     white-space: nowrap;
     color: black;
+    /* Font size for 1080p screens or less */
     font-size: 1.2rem;
+    font-weight: bold;
     text-decoration: underline;
     font-family: 'Courier New', Courier, monospace;
     line-height: 2.5rem;

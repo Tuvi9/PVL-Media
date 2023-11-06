@@ -17,16 +17,19 @@ function Clients() {
           <div>
             <p id="clients_text">Our satisfied clients!</p>
           </div>
-          {/* circle_component places puts clients into a grid*/}
           <div className="circle_component">
+          {/* circle places clients into a grid*/}
             <div className="circles">
                 <div>
+                  {/* Images of clients*/}
                   <img id="client_images" src={Kriit} alt="Kalle Riit"></img>
                 </div>
                 <div>
+                  {/* Images of clients*/}
                   <img id="client_images" src={Sasskar} alt="Aleksander Potašenkov"></img>
                 </div>
                 <div>
+                  {/* Images of clients*/}
                   <img id="client_images" src={BURGERKING} alt="Asko Hulkko"></img>
                 </div>
             </div>

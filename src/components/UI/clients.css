@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
 }
-
+/* Evenly distrubutes circles to the middle of the screen */
 .clients_container {
     text-align: center;
     margin-top: calc(5% + 3rem);
@@ -17,6 +17,7 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+/* Displaying the circles in a 3x3 grid */
 .circles {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

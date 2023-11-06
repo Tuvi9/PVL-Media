@@ -1,11 +1,29 @@
-.you{
-    display: flex;
-    justify-content: center;
+/* Home screen with a 2x2 grid layout */
+.grid-container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
     align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
 }
 
-#you_text{
-    font-size: 60px;
+/* Grid item styling */
+.grid-item {
+    width: 20%;
+    padding: 5rem;
+    display: flex;
+    color: white;
+    font-size: 2.5rem;
     font-weight: bold;
+    /* Centers text in grid item */
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border: 10px solid black;
+    /* Evenly distrubutes grids from each other */
+    margin-left: calc(0.5 * 30vw);
+    margin-right: calc(0.5 * 30vw);
+    margin-bottom: calc(0.5 * 35vh);
     font-family: 'Courier New', Courier, monospace;
 }
