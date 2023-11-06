@@ -8,27 +8,52 @@
   column-gap: 10rem;
   justify-content: center;
   align-items: center; 
+
+
+  /* Media queries that space out the content depending on the width and height of the screen */
+  @media (min-width: 1921px), (min-height: 1081px) {
+    column-gap: 20rem;
+  }
+
+  @media (min-width: 2561px), (min-height: 1441px) {
+    column-gap: 40rem;
+  }
  }
  
- /* Kanye West song lyrics in About US*/
+ /* Kanye West song lyrics in About Us */
  .border_and_text {
-    background-color: black;
-    border: 1.5rem solid black;
+    display: flex;
+    background-color: white;
+    border: 1px solid black;
+    padding: 2.5rem;
     white-space: nowrap;
-    color: white;
+    color: black;
     font-size: 1.2rem;
     text-decoration: underline;
     font-family: 'Courier New', Courier, monospace;
     line-height: 2.5rem;
-    margin-bottom: 25vh;
+    /* Makes sure textbox is always centered */
+    margin-bottom: calc(100vh - 75vh - 8.4vh);
+
+    /* Media queries that warp text box size depending on the width and height of the screen */
+    @media (min-width:1921px), (min-height:1081px){
+      font-size: 1.8rem;
+      line-height: 4rem;
+    }
+
+    @media (min-width:2561px), (min-height:1441px){
+      font-size: 2rem;
+      line-height: 5rem;
+    }
   }
   
-  /* Footer for all my pages in PVL-Media(This whole website)*/
+  /* Footer for all my pages in PVL-Media(This whole website) */
   .bottom_bar {
     display: flex;
+    /* Makes sure text is always centered */
     align-items: center;
     justify-content: start;
-
+    
     bottom: 0;
     height: 8.4vh;
     width: 100%;
@@ -43,13 +68,22 @@
     margin-left: 1vw;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
+
+    /* Media queries that adjust the font-size of the footer text depending on the width and height of the screen */
+    @media (min-width: 1921px), (min-height: 1081px) {
+      font-size: 2rem;
+    }
+
+    @media (min-width: 2561px), (min-height: 1441px) {
+      font-size: 2.5rem;
+    }
   }
 
   /* Image of me in About Us */
   #about_images {
     width: 40vw;
     height: 75vh;
-    border-radius: 10px;
-    margin-bottom: 7.5rem;
     box-shadow: 10px 10px 10px 10px #888888;
+    /* Makes sure image is always centered */
+    margin-bottom: calc(100vh - 75vh - 8.4vh);
   }
