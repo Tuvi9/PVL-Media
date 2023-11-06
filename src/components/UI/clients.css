@@ -1,31 +1,35 @@
 /* Put's each circl in it's own box */
 .circle_component {
     display: flex;
-    column-gap: 15%;
     align-items: center;
-    grid-template-rows: 1fr;
     justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
-
 }
 
 .clients_container {
     text-align: center;
+    margin-top: calc(5% + 3rem);
 }
 
 /* Where you can style the text for the title in (clients.js) */
-.clients_text {
-    font-size: 60px;
+#clients_text {
+    font-size: 5rem;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
 }
 
+.circles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20rem;
+}
+
 /* Shaping each clients image size */
 #client_images {
-    width: 225px;
-    height: 225px;
+    width: 25rem;
+    height: 25rem;
     border-radius: 100%;
     box-shadow: 10px 10px 10px 10px #888888;
 
 }
+
 

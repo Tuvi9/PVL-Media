@@ -3,6 +3,7 @@ import React from "react";
 import PictureOfMe from '../components/images/PictureOfMe.JPG';
 // Styling file for this page
 import '../components/UI/about.css';
+import '../components/UI/footer.css';
 
 function About() {
   return (

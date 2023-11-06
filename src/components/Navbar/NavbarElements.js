@@ -24,8 +24,13 @@ export const NavLink = styled(Link)`
   padding: 0 1rem;
   height: 100%;
   font-size: 150%;
+
+  @media screen and (min-width: 1921px), (min-height:1081) {
+    font-size: 175%;
+
   @media screen and (min-width: 2561px), (min-height:1441) {
     font-size: 200%;
+
   cursor: pointer;
   &.active {
     color: white;

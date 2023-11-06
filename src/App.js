@@ -17,6 +17,8 @@ function App() {
       <Routes>
         {/* Sends you to PVL-Media*/}
         <Route path='/home' element={<Home />} />
+        {/* Set's home screen */}
+        <Route path='/' element={<Home />} />
         {/* Sends you to About Us */}
         <Route path='/about' element={<About />} />
         {/* Sends you to Our Clients */}

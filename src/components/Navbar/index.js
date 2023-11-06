@@ -10,7 +10,7 @@ const Navbar = () => {
             <Bars />
             <NavMenu>
                 <NavLink to='/about' activeStyle >About Us</NavLink>
-                <NavLink to='/clients' activeStyle style={{marginRight: '40px'}}>Our Clients</NavLink>
+                <NavLink to='/clients' activeStyle style={{marginRight: '2.5rem'}}>Our Clients</NavLink>
             </NavMenu>
         </Nav>
     </>

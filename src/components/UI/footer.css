@@ -1,0 +1,30 @@
+.bottom_bar {
+    display: flex;
+    /* Makes sure text is always centered */
+    align-items: center;
+    justify-content: start;
+    
+    bottom: 0;
+    height: 8.4vh;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+  }
+  
+  /* Text in the footer */
+    #bottom_bar_text {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 1vw;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+
+    /* Media queries that adjust the font-size of the footer text depending on the width and height of the screen */
+    @media (min-width: 1921px), (min-height: 1081px) {
+        font-size: 2rem;
+      }
+  
+      @media (min-width: 2561px), (min-height: 1441px) {
+        font-size: 2.5rem;
+      }
+    }
